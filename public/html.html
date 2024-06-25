@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Data Connect - Relevez le Défi !</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="marjane.png" alt="Logo">
+        </div>
+        <h1>Quiz Data Connect - Relevez le Défi !</h1>
+        <div class="description">
+            Prêt(e) pour un petit défi ? Répondez au quiz Connect qui est l'occasion de revenir sur les points clés présentés dans les différentes vidéos publiées précédemment. Votre participation compte ! Bonne chance à tous, et que vos connaissances brillent !
+        </div>
+        <div class="instruction">
+            <p>( Choisissez parmi la ou les bonnes réponses )</p>
+        </div>
+        <!-- Formulaire du quiz ici -->
+        <form action="/submit-page1" method="post">
+            <div class="form-group">
+                <label>1. Qu'est-ce que signifie la « DATA » ? (1 point)</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="question1" value="De l'informations"> De l'informations</label>
+                    <label><input type="radio" name="question1" value="Des logiciels"> Des logiciels</label>
+                    <label><input type="radio" name="question1" value="Des produits"> Des produits</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>2. Qu'est-ce que le programme Connect de Marjane Group ? (1 point)</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="question2" value="Un programme visant à transformer les données en une forme plus accessible"> Un programme visant à transformer les données en une forme plus accessible</label>
+                    <label><input type="radio" name="question2" value="Un programme qui centralise toutes les données de Marjane Group"> Un programme qui centralise toutes les données de Marjane Group</label>
+                    <label><input type="radio" name="question2" value="Un programme qui vise à aider à la prise de décision grâce à des données structurées"> Un programme qui vise à aider à la prise de décision grâce à des données structurées</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>3. Quelles sont les utilisations de la data mentionnées par le Président ? (1 point)</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="question3" value="Nouveaux outils marketing"> Nouveaux outils marketing</label>
+                    <label><input type="checkbox" name="question3" value="Business intelligence"> Business intelligence</label>
+                    <label><input type="checkbox" name="question3" value="Optimisation de la logistique"> Optimisation de la logistique</label>
+                    <label><input type="checkbox" name="question3" value="Algorithmes data science"> Algorithmes data science</label>
+                </div>
+            </div>
+
+            <button type="submit" class="next-btn">Suivant</button>
+        </form>
+
+        <div class="privacy-message">
+            Nous respectons votre confidentialité. Vos réponses resteront anonymes et seront utilisées uniquement à des fins d'amélioration de nos services.
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Marjane Group. Tous droits réservés. <a href="#">Politique de confidentialité</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
